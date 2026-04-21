@@ -458,6 +458,22 @@ main section {
   pointer-events: auto;
 }
 
+.plot-retry {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #a33;
+  background: #ffffff;
+  color: #a33;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.plot-retry:hover {
+  background: #a33;
+  color: #ffffff;
+}
+
 .placeholder-card {
   border-style: dashed;
   background: linear-gradient(180deg, rgba(223, 243, 240, 0.42) 0%, rgba(255, 255, 255, 0.9) 100%);

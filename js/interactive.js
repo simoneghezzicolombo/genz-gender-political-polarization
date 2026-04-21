@@ -11,7 +11,11 @@
       const existing = document.querySelector('script[data-plotly-loader="true"]');
       if (existing) {
         existing.addEventListener("load", () => resolve(window.Plotly));
-        existing.addEventListener("error", reject);
+        existing.addEventListener("error", (err) => {
+          plotlyLoading = null;
+          existing.remove();
+          reject(err);
+        });
         return;
       }
       const s = document.createElement("script");
@@ -19,7 +23,11 @@
       s.async = true;
       s.dataset.plotlyLoader = "true";
       s.onload = () => resolve(window.Plotly);
-      s.onerror = reject;
+      s.onerror = (err) => {
+        plotlyLoading = null;
+        s.remove();
+        reject(err);
+      };
       document.head.appendChild(s);
     });
     return plotlyLoading;
@@ -88,9 +96,21 @@
       container.dataset.rendered = "false";
       console.error("Interactive chart failed:", src, err);
       if (status) {
-        status.textContent =
-          "Could not load the interactive chart. Please refresh the page or check your connection.";
+        status.innerHTML =
+          'Could not load the interactive chart. <button type="button" class="plot-retry">Retry</button>';
         status.classList.add("plot-status--error");
+        const retry = status.querySelector(".plot-retry");
+        if (retry) {
+          retry.addEventListener(
+            "click",
+            () => {
+              status.classList.remove("plot-status--error");
+              status.textContent = "Loading interactive chart...";
+              renderContainer(container);
+            },
+            { once: true }
+          );
+        }
       }
     }
   }
