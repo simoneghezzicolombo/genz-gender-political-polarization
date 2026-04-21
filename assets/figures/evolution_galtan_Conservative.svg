@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='792.00pt' height='475.20pt' viewBox='0 0 792.00 475.20'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3OTIuMDB8MC4wMHw0NzUuMjA='>
+    <rect x='0.00' y='0.00' width='792.00' height='475.20' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3OTIuMDB8MC4wMHw0NzUuMjA=)'>
+<rect x='0.00' y='0.00000000000011' width='792.00' height='475.20' style='stroke-width: 1.16; stroke: none; fill: #FFFFFF;' />
+<polyline points='43.77,338.02 786.02,338.02 ' style='stroke-width: 1.16; stroke: #DBDBDB; stroke-linecap: butt;' />
+<polyline points='43.77,250.82 786.02,250.82 ' style='stroke-width: 1.16; stroke: #DBDBDB; stroke-linecap: butt;' />
+<polyline points='43.77,163.61 786.02,163.61 ' style='stroke-width: 1.16; stroke: #DBDBDB; stroke-linecap: butt;' />
+<polygon points='129.42,145.14 272.16,194.19 414.90,216.78 557.64,254.01 700.38,280.68 700.38,383.19 557.64,313.75 414.90,272.37 272.16,242.46 129.42,210.66 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #E76055; fill-opacity: 0.16;' />
+<polyline points='129.42,145.14 272.16,194.19 414.90,216.78 557.64,254.01 700.38,280.68 ' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt;' />
+<polyline points='700.38,383.19 557.64,313.75 414.90,272.37 272.16,242.46 129.42,210.66 ' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt;' />
+<polygon points='129.42,124.83 272.16,174.83 414.90,119.60 557.64,174.90 700.38,134.94 700.38,233.74 557.64,236.59 414.90,175.60 272.16,222.80 129.42,193.33 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #1F4E79; fill-opacity: 0.16;' />
+<polyline points='129.42,124.83 272.16,174.83 414.90,119.60 557.64,174.90 700.38,134.94 ' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt;' />
+<polyline points='700.38,233.74 557.64,236.59 414.90,175.60 272.16,222.80 129.42,193.33 ' style='stroke-width: 1.16; stroke: none; stroke-linecap: butt;' />
+<polyline points='129.42,177.90 272.16,218.33 414.90,244.58 557.64,283.88 700.38,331.94 ' style='stroke-width: 2.13; stroke: #E76055; stroke-linecap: butt;' />
+<polyline points='129.42,159.08 272.16,198.82 414.90,147.60 557.64,205.75 700.38,184.34 ' style='stroke-width: 2.13; stroke: #1F4E79; stroke-linecap: butt;' />
+<circle cx='129.42' cy='177.90' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<circle cx='129.42' cy='159.08' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<circle cx='272.16' cy='218.33' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<circle cx='272.16' cy='198.82' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<circle cx='414.90' cy='244.58' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<circle cx='414.90' cy='147.60' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<circle cx='557.64' cy='283.88' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<circle cx='557.64' cy='205.75' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<circle cx='700.38' cy='331.94' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<circle cx='700.38' cy='184.34' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<line x1='65.18' y1='98.51' x2='65.18' y2='404.28' style='stroke-width: 1.17; stroke: #8C8C8C; stroke-linecap: butt;' />
+<polygon points='67.59,102.68 65.18,98.51 62.77,102.68 ' style='stroke-width: 1.17; stroke: #8C8C8C; stroke-linecap: butt; fill: #8C8C8C;' />
+<polygon points='62.77,400.11 65.18,404.28 67.59,400.11 ' style='stroke-width: 1.17; stroke: #8C8C8C; stroke-linecap: butt; fill: #8C8C8C;' />
+<text transform='translate(56.82,111.69) rotate(-90)' text-anchor='middle' style='font-size: 8.54px;fill: #737373; font-family: "Arial";' textLength='19.62px' lengthAdjust='spacingAndGlyphs'>Trad.</text>
+<text transform='translate(56.82,391.10) rotate(-90)' text-anchor='middle' style='font-size: 8.54px;fill: #737373; font-family: "Arial";' textLength='33.69px' lengthAdjust='spacingAndGlyphs'>Postmat.</text>
+<text x='700.38' y='94.60' text-anchor='middle' style='font-size: 9.10px; font-family: "Arial";' textLength='37.30px' lengthAdjust='spacingAndGlyphs'>n: 11,607</text>
+<text x='38.39' y='341.46' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>4.4</text>
+<text x='38.39' y='254.25' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>4.8</text>
+<text x='38.39' y='167.05' text-anchor='end' style='font-size: 9.60px;fill: #4D4D4D; font-family: "Arial";' textLength='13.33px' lengthAdjust='spacingAndGlyphs'>5.2</text>
+<text x='129.42' y='431.82' text-anchor='middle' style='font-size: 9.60px;fill: #404040; font-family: "Arial";' textLength='74.08px' lengthAdjust='spacingAndGlyphs'>Silent Generation</text>
+<text x='272.16' y='431.82' text-anchor='middle' style='font-size: 9.60px;fill: #404040; font-family: "Arial";' textLength='62.89px' lengthAdjust='spacingAndGlyphs'>Baby Boomers</text>
+<text x='414.90' y='431.82' text-anchor='middle' style='font-size: 9.60px;fill: #404040; font-family: "Arial";' textLength='27.20px' lengthAdjust='spacingAndGlyphs'>Gen X</text>
+<text x='557.64' y='431.82' text-anchor='middle' style='font-size: 9.60px;fill: #404040; font-family: "Arial";' textLength='44.72px' lengthAdjust='spacingAndGlyphs'>Millennials</text>
+<text x='700.38' y='431.82' text-anchor='middle' style='font-size: 9.60px;fill: #404040; font-family: "Arial";' textLength='26.66px' lengthAdjust='spacingAndGlyphs'>Gen Z</text>
+<text x='414.90' y='452.39' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='59.36px' lengthAdjust='spacingAndGlyphs'>Generation</text>
+<text transform='translate(14.57,251.40) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='166.48px' lengthAdjust='spacingAndGlyphs'>Average Party Position (CHES)</text>
+<line x1='364.02' y1='56.65' x2='377.84' y2='56.65' style='stroke-width: 2.13; stroke: #E76055; stroke-linecap: butt;' />
+<circle cx='370.93' cy='56.65' r='3.48' style='stroke-width: 0.77; stroke: #E76055; fill: #E76055;' />
+<line x1='425.21' y1='56.65' x2='439.03' y2='56.65' style='stroke-width: 2.13; stroke: #1F4E79; stroke-linecap: butt;' />
+<circle cx='432.12' cy='56.65' r='3.48' style='stroke-width: 0.77; stroke: #1F4E79; fill: #1F4E79;' />
+<text x='385.55' y='60.08' style='font-size: 9.60px; font-family: "Arial";' textLength='31.95px' lengthAdjust='spacingAndGlyphs'>Female</text>
+<text x='446.74' y='60.08' style='font-size: 9.60px; font-family: "Arial";' textLength='20.77px' lengthAdjust='spacingAndGlyphs'>Male</text>
+<text x='43.77' y='33.74' style='font-size: 11.00px;fill: #3B3B3B; font-family: "Arial";' textLength='212.05px' lengthAdjust='spacingAndGlyphs'>Average party position (CHES) with 95% CI</text>
+<text x='43.77' y='16.72' style='font-size: 15.00px; font-weight: bold; font-family: "Arial";' textLength='540.23px' lengthAdjust='spacingAndGlyphs'>Postmaterialist-Traditional Values by Generation and Gender - Conservative</text>
+<text x='786.02' y='467.34' text-anchor='end' style='font-size: 9.00px;fill: #666666; font-family: "Arial";' textLength='348.00px' lengthAdjust='spacingAndGlyphs'>Data: EU27 - Sources: EES (fieldwork 2024); ESS (fieldwork 2023-2024); CHES (2024)</text>
+</g>
+</g>
+</svg>

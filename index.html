@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gen Z Gender Political Polarization</title>
+  <meta
+    name="description"
+    content="An English-language public companion to Simone Ghezzi Colombo's thesis on gendered political polarization among young Europeans."
+  />
+  <meta name="theme-color" content="#177a74" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top">Gen Z Gender Political Polarization</a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#figures">Figures</a>
+        <a href="#method">Method</a>
+        <a href="#references">References</a>
+        <a href="thesis.pdf" target="_blank" rel="noreferrer">Full thesis PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="top">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Public research companion</div>
+        <h1>How gendered political polarization looks inside Europe&rsquo;s Gen Z</h1>
+        <p class="subtitle">
+          A public-facing, English-language companion to my master&rsquo;s thesis on the new cultural divide between young women and young men across the EU27.
+        </p>
+        <p class="hero-copy">
+          This site stays close to the thesis. The figures shown here are the original final SVG outputs generated for the dissertation, while the interactive layer helps readers move across welfare regimes, compare exact values, and connect the visuals to the core argument in plain but accurate language.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="thesis.pdf" target="_blank" rel="noreferrer">Read the full thesis</a>
+          <a class="btn" href="#figures">Go to the figures</a>
+        </div>
+        <div class="facts">
+          <span class="fact">EU27 pooled analysis</span>
+          <span class="fact">ESS + EES + CHES linkage</span>
+          <span class="fact">Welfare-regime comparison</span>
+          <span class="fact">Original thesis figures</span>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div class="eyebrow">Main claim</div>
+        <p>
+          The thesis argues that the strongest gendered political divergence inside Gen Z is not captured best by a broad left-right label, but by a cultural axis centered on postmaterialist versus traditional values.
+        </p>
+        <p>
+          In practical terms, the gap is not only about whether young women and young men end up in different ideological places. It is also about whether their generational trajectories move apart, and where in Europe that separation becomes most visible.
+        </p>
+      </aside>
+    </section>
+
+    <section id="overview">
+      <div class="section-head">
+        <h2>What this page does</h2>
+        <p>
+          The goal is not to replace the dissertation, but to make one section of it easier to explore: the welfare-regime comparison in Chapter 4, where the Gen Z gender gap is examined through the GAL-TAN dimension.
+        </p>
+      </div>
+
+      <div class="takeaways">
+        <article class="takeaway">
+          <strong>Divulgative, but thesis-based</strong>
+          <span>The commentary under each figure is written in plain English, but it stays anchored to the empirical logic and conclusions of the thesis.</span>
+        </article>
+        <article class="takeaway">
+          <strong>Faithful to the original visuals</strong>
+          <span>The charts are the original exported SVG figures, so the page preserves the exact visual language, labels, colors, and captions of the dissertation outputs.</span>
+        </article>
+        <article class="takeaway">
+          <strong>Interactive where it helps</strong>
+          <span>The regime selector updates the explanatory cards and numeric summaries so that the reader can inspect one regime at a time without losing the context of the full figure.</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="figures">
+      <div class="section-head">
+        <h2>Figure explorer</h2>
+        <p>
+          Use the shared regime selector to move across Conservative, Mediterranean, Post-Socialist, and Social Democratic Europe. The images remain exact copies of the thesis figures; the cards around them help interpret what is happening in the selected regime.
+        </p>
+      </div>
+
+      <div class="card regime-toolbar">
+        <div class="toolbar-top">
+          <div class="toolbar-copy">
+            Selected regime:
+            <strong data-selected-regime>Conservative</strong>
+          </div>
+          <div class="toolbar-copy" id="data-status">
+            Interactive values loaded from the final CSV exports used for the thesis figures.
+          </div>
+        </div>
+        <div class="regime-controls" data-regime-controls></div>
+      </div>
+
+      <div class="figure-grid" style="margin-top: 18px;">
+        <figure class="figure-card">
+          <h3>Figure 1. Welfare regimes as analytical contexts</h3>
+          <div class="figure-frame" style="margin-top: 14px;">
+            <img src="assets/maps/welfare_regimes_eu.svg" alt="EU member states grouped by welfare regime" />
+          </div>
+          <figcaption class="figure-caption">
+            Regime categories used in the thesis: Social Democratic, Conservative, Mediterranean, and Post-Socialist. The grouping follows the analytical use of welfare-state typologies in the comparative literature rather than suggesting national uniformity.
+          </figcaption>
+          <p class="figure-comment">
+            <strong>Comment.</strong> The regime map matters because the thesis is not only asking whether a gender gap exists, but whether institutional context helps us understand where that gap widens, stabilizes, or changes shape.
+          </p>
+        </figure>
+
+        <aside class="figure-card">
+          <h3>Selected regime at a glance</h3>
+          <p class="figure-caption">
+            These cards update from the thesis CSV outputs and give a compact reading aid for the selected regime.
+          </p>
+          <div class="metrics" style="margin-top: 14px;">
+            <div class="metric">
+              <span>Countries</span>
+              <strong id="country-list">-</strong>
+            </div>
+            <div class="metric">
+              <span>Total regime sample</span>
+              <strong id="regime-total-sample">-</strong>
+            </div>
+            <div class="metric">
+              <span>Gen Z female mean</span>
+              <strong id="female-mean">-</strong>
+            </div>
+            <div class="metric">
+              <span>Gen Z male mean</span>
+              <strong id="male-mean">-</strong>
+            </div>
+          </div>
+          <div class="callout" style="margin-top: 14px;">
+            <strong>Why the regime split matters</strong>
+            The welfare-regime lens helps compare broad institutional environments without flattening everything into a single European average.
+          </div>
+        </aside>
+      </div>
+
+      <div class="figure-grid" style="margin-top: 18px;">
+        <figure class="figure-card">
+          <h3>Figure 2. Postmaterialist-traditional values by generation and gender</h3>
+          <div class="figure-frame" style="margin-top: 14px;">
+            <img
+              id="evolution-figure"
+              src="assets/figures/evolution_galtan_Conservative.svg"
+              alt="Original thesis chart for the Conservative regime"
+            />
+          </div>
+          <figcaption class="figure-caption">
+            Original thesis figure for <strong data-selected-regime>Conservative</strong>. Higher values indicate movement toward the traditional pole; lower values indicate movement toward the postmaterialist pole. Source note in the figure: EES 2024, ESS 2023-2024, CHES 2024.
+          </figcaption>
+          <p class="figure-comment">
+            <strong>Comment.</strong>
+            <span id="evolution-comment">Loading...</span>
+          </p>
+        </figure>
+
+        <aside class="figure-card">
+          <h3>How to read the selected regime</h3>
+          <p class="figure-caption">
+            These values come from the same final aggregated CSV used to generate the figure above.
+          </p>
+          <div class="metrics" style="margin-top: 14px;">
+            <div class="metric">
+              <span>Regime sample</span>
+              <strong id="genz-panel-sample">-</strong>
+            </div>
+            <div class="metric">
+              <span>Female 95% CI</span>
+              <strong id="female-ci">-</strong>
+            </div>
+            <div class="metric">
+              <span>Male 95% CI</span>
+              <strong id="male-ci">-</strong>
+            </div>
+            <div class="metric">
+              <span>Absolute gap</span>
+              <strong id="gap-value">-</strong>
+            </div>
+          </div>
+          <div class="callout">
+            <strong>Reading tip</strong>
+            The line chart is about trajectories across generations. It shows whether the gender split is mainly a Gen Z level difference or the outcome of diverging generational movement.
+          </div>
+        </aside>
+      </div>
+
+      <div class="two-col" style="margin-top: 18px;">
+        <figure class="figure-card">
+          <h3>Figure 3. Gen Z by welfare regime</h3>
+          <div class="figure-frame" style="margin-top: 14px;">
+            <img src="assets/figures/genz_galtan_by_regime.svg" alt="Original thesis grouped-bar chart for Gen Z by welfare regime" />
+          </div>
+          <figcaption class="figure-caption">
+            Grouped-bar comparison for the full Gen Z panel. The colored regime labels and the female/male bars follow the original thesis output generated for Section 4.3.
+          </figcaption>
+          <p class="figure-comment">
+            <strong>Comment.</strong>
+            <span id="grouped-comment">Loading...</span>
+          </p>
+        </figure>
+
+        <figure class="figure-card">
+          <h3>Figure 4. Absolute Gen Z gender gap</h3>
+          <div class="figure-frame" style="margin-top: 14px;">
+            <img src="assets/figures/abs_gap_genz_galtan_by_regime.svg" alt="Original thesis bar chart for the absolute Gen Z gender gap" />
+          </div>
+          <figcaption class="figure-caption">
+            Absolute difference in CHES GALTAN mean between Gen Z women and men inside each welfare regime. The image is the original final SVG from the thesis.
+          </figcaption>
+          <p class="figure-comment">
+            <strong>Comment.</strong>
+            <span id="gap-comment">Loading...</span>
+          </p>
+        </figure>
+      </div>
+
+      <div class="figure-grid" style="margin-top: 18px;">
+        <figure class="figure-card">
+          <h3>Figure 5. Gender Divergence in Change (GDC) index</h3>
+          <div class="figure-frame" style="margin-top: 14px;">
+            <img src="assets/figures/GDC_Millennials_to_GenZ_by_regime_general_style.svg" alt="Original thesis GDC chart by welfare regime" />
+          </div>
+          <figcaption class="figure-caption">
+            The GDC figure shifts attention from level differences to generational movement. It asks how differently women and men change from Millennials to Gen Z in the balance between progressive and traditional extremes.
+          </figcaption>
+          <p class="figure-comment">
+            <strong>Comment.</strong>
+            <span id="gdc-comment">Loading...</span>
+          </p>
+        </figure>
+
+        <aside class="figure-card">
+          <h3>Selected regime: exact readout</h3>
+          <p class="figure-caption">
+            These values help interpret Figures 3 to 5 for the currently selected regime without changing the original images.
+          </p>
+          <div class="metrics" style="margin-top: 14px;">
+            <div class="metric">
+              <span>Gap rank</span>
+              <strong id="gap-rank">-</strong>
+            </div>
+            <div class="metric">
+              <span>GDC rank</span>
+              <strong id="gdc-rank">-</strong>
+            </div>
+            <div class="metric">
+              <span>GDC index</span>
+              <strong id="gdc-value">-</strong>
+            </div>
+            <div class="metric">
+              <span>Female shift</span>
+              <strong id="delta-f">-</strong>
+            </div>
+          </div>
+          <div class="detail-list">
+            <div><span>Male shift</span><strong id="delta-m">-</strong></div>
+            <div><span>Interpretive focus</span><strong>Divergence in change</strong></div>
+            <div><span>Selected regime</span><strong data-selected-regime>Conservative</strong></div>
+          </div>
+          <div class="callout">
+            <strong>Why GDC matters</strong>
+            A large level gap and a large GDC are not the same thing. GDC becomes high when women and men do not merely end up apart, but arrive there through different generational shifts.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="section-head">
+        <h2>Method in brief</h2>
+        <p>
+          The thesis links party choices recorded in the European Social Survey and the European Election Study to party-position estimates from the Chapel Hill Expert Survey, then compares those linked positions across generations, gender, and welfare regimes.
+        </p>
+      </div>
+
+      <div class="lead-grid">
+        <article class="card">
+          <p>
+            The regime analysis shown on this page corresponds to the final outputs generated by the thesis plotting workflow for Section 4.3. The interactive cards are derived from the same exported CSV files used to build the SVG figures, so the numbers and the images remain synchronized.
+          </p>
+          <p>
+            On the conceptual side, the page follows the thesis argument that welfare regimes should be read as broad comparative contexts, not as deterministic blocks. They help frame variation in social policy, labor-market structure, and civic culture, which in turn may shape political socialization.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="eyebrow">Figure design reference</div>
+          <p>
+            All charts shown here are adapted directly from the final thesis outputs generated by the regime-analysis script. This is why the site keeps the original title wording, captions, colors, and regime order instead of replacing them with a new design system.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="references">
+      <div class="section-head">
+        <h2>APA references</h2>
+        <p>
+          The figure layer on this page is based on the thesis itself, on the final regime-analysis outputs, and on the data sources cited in the dissertation. The references below are the key ones for the figures and their comparative framing.
+        </p>
+      </div>
+
+      <ol class="references">
+        <li>
+          European Social Survey European Research Infrastructure (ESS ERIC). (2025). <em>ESS round 11 - 2023. Social inequalities in health, Gender in contemporary Europe</em>. Sikt - Norwegian Agency for Shared Services in Education and Research.
+          <a href="https://doi.org/10.21338/ess11-2023" target="_blank" rel="noreferrer">https://doi.org/10.21338/ess11-2023</a>
+        </li>
+        <li>
+          Popa, S. A., Hobolt, S. B., Van der Brug, W., Katsanidou, A., Gattermann, K., Sorace, M., Toygur, I., &amp; De Vreese, C. (2024). <em>European Parliament Election Study 2024, voter study</em> (ZA8868; Version 1.0.0) [Data set]. GESIS, Cologne.
+          <a href="https://doi.org/10.4232/1.14409" target="_blank" rel="noreferrer">https://doi.org/10.4232/1.14409</a>
+        </li>
+        <li>
+          Rovny, J., Bakker, R., Hooghe, L., Jolly, S., Marks, G., Polk, J., Steenbergen, M., &amp; Vachudova, M. (2025). <em>25 years of political party positions in Europe: The Chapel Hill Expert Survey, 1999-2024</em> [Working paper].
+        </li>
+        <li>
+          Esping-Andersen, G. (1989). The three political economies of the welfare state. <em>Canadian Review of Sociology/Revue canadienne de sociologie, 26</em>(1), 10-36.
+          <a href="https://doi.org/10.1111/j.1755-618X.1989.tb00411.x" target="_blank" rel="noreferrer">https://doi.org/10.1111/j.1755-618X.1989.tb00411.x</a>
+        </li>
+        <li>
+          Ferrera, M. (1996). Il modello sud-europeo di welfare state. <em>Italian Political Science Review/Rivista Italiana di Scienza Politica, 26</em>(1), 67-101.
+          <a href="https://doi.org/10.1017/S0048840200024047" target="_blank" rel="noreferrer">https://doi.org/10.1017/S0048840200024047</a>
+        </li>
+        <li>
+          Ghezzi Colombo, S. (2025). <em>Masculinities, feminist mobilization and the new cultural divide: A quantitative analysis of gendered political attitudes among young Europeans</em> [Master&rsquo;s thesis, University of Milano-Bicocca].
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="shell foot">
+    Built from the final regime-analysis outputs of the thesis, adapted for GitHub Pages.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
