@@ -17,6 +17,7 @@
       <a class="brand" href="#top">Gen Z Gender Political Polarization</a>
       <nav class="navlinks" aria-label="Primary">
         <a href="#overview">Overview</a>
+        <a href="chapter-4.html">Chapter 4 — Interactive</a>
         <a href="#figures">Figures</a>
         <a href="#method">Method</a>
         <a href="#references">References</a>
@@ -37,7 +38,8 @@
           This site stays close to the thesis. The figures shown here are the original final SVG outputs generated for the dissertation, while the interactive layer helps readers move across welfare regimes, compare exact values, and connect the visuals to the core argument in plain but accurate language.
         </p>
         <div class="actions">
-          <a class="btn primary" href="thesis.pdf" target="_blank" rel="noreferrer">Read the full thesis</a>
+          <a class="btn primary" href="chapter-4.html">Open Chapter 4 — Interactive</a>
+          <a class="btn" href="thesis.pdf" target="_blank" rel="noreferrer">Read the full thesis</a>
           <a class="btn" href="#figures">Go to the figures</a>
         </div>
         <div class="facts">
@@ -341,8 +343,16 @@
   </main>
 
   <footer class="shell foot">
-    Built from the final regime-analysis outputs of the thesis, adapted for GitHub Pages.
+    <div class="foot-row">
+      <span>Built from the final regime-analysis outputs of the thesis, adapted for GitHub Pages.</span>
+      <span class="copyright">&copy; <span id="foot-year">2025</span> Simone Ghezzi Colombo. All rights reserved.</span>
+    </div>
   </footer>
+
+  <script>
+    var _fy = document.getElementById("foot-year");
+    if (_fy) _fy.textContent = new Date().getFullYear();
+  </script>
 
   <script src="app.js"></script>
 </body>
