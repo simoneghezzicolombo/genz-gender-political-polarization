@@ -402,6 +402,88 @@ main section {
   padding: 28px 0 48px;
   color: var(--muted);
   font-size: 0.94rem;
+  border-top: 1px solid rgba(23, 49, 58, 0.06);
+  margin-top: 24px;
+}
+
+.foot-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+}
+
+.foot-link {
+  color: var(--teal-strong);
+  font-weight: 600;
+}
+
+.foot-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: var(--muted);
+}
+
+.plot-frame {
+  padding: 8px 8px 4px;
+  min-height: 420px;
+  position: relative;
+}
+
+.plot-target {
+  width: 100%;
+  min-height: 420px;
+}
+
+.plot-status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.96rem;
+  padding: 20px;
+  text-align: center;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.plot-status--error {
+  color: #a33;
+  background: rgba(255, 236, 236, 0.85);
+  pointer-events: auto;
+}
+
+.plot-retry {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #a33;
+  background: #ffffff;
+  color: #a33;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.plot-retry:hover {
+  background: #a33;
+  color: #ffffff;
+}
+
+.placeholder-card {
+  border-style: dashed;
+  background: linear-gradient(180deg, rgba(223, 243, 240, 0.42) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+@media (max-width: 700px) {
+  .plot-frame,
+  .plot-target {
+    min-height: 360px;
+  }
 }
 
 @media (max-width: 980px) {
