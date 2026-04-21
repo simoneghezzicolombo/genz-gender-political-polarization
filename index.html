@@ -16,10 +16,10 @@
     <div class="shell nav">
       <a class="brand" href="#top">Gen Z Gender Political Polarization</a>
       <nav class="navlinks" aria-label="Primary">
-        <a href="#overview">Overview</a>
         <a href="#left-right">Left &amp; right</a>
         <a href="#values">Values</a>
         <a href="#women">Women&rsquo;s rights</a>
+        <a href="#extremes">Extremes</a>
         <a href="#regimes">Four Europes</a>
         <a href="#references">References</a>
         <a href="thesis.pdf" target="_blank" rel="noreferrer">Full thesis PDF</a>
@@ -33,56 +33,26 @@
         <div class="eyebrow">Public research companion</div>
         <h1>How gendered political polarization looks inside Europe&rsquo;s Gen Z</h1>
         <p class="subtitle">
-          A public-facing, English-language companion to my master&rsquo;s thesis on the new cultural divide between young women and young men across the EU27.
+          A public, English-language companion to my master&rsquo;s thesis on the new cultural divide between young women and young men across the EU27.
         </p>
         <p class="hero-copy">
-          Every chart on this page is an interactive version of a thesis figure. Hover over a generation, a birth year, or a bar to read the exact values, 95% confidence intervals and sample sizes. Click a legend entry to hide or isolate a series.
+          Every chart below is an interactive version of a thesis figure: hover to read exact values and 95% confidence intervals, click a legend entry to hide a series, or use the mode bar to zoom and download a PNG.
         </p>
         <div class="actions">
           <a class="btn primary" href="#values">Start with the key finding</a>
           <a class="btn" href="thesis.pdf" target="_blank" rel="noreferrer">Read the full thesis</a>
-        </div>
-        <div class="facts">
-          <span class="fact">EU27 pooled analysis</span>
-          <span class="fact">ESS + EES + CHES linkage</span>
-          <span class="fact">Interactive figures</span>
-          <span class="fact">Based on the thesis</span>
         </div>
       </div>
 
       <aside class="card">
         <div class="eyebrow">The main claim</div>
         <p>
-          The strongest gendered political divergence inside Gen Z is not captured best by a broad left-right label, but by a cultural axis centered on postmaterialist versus traditional values.
+          The strongest gendered political divergence inside Gen Z is not captured best by a broad left&ndash;right label, but by a cultural axis centered on postmaterialist versus traditional values.
         </p>
         <p>
           The gap is not only about whether young women and young men end up in different ideological places. It is also about whether their generational trajectories move <em>apart</em>, and where in Europe that separation becomes most visible.
         </p>
       </aside>
-    </section>
-
-    <section id="overview">
-      <div class="section-head">
-        <h2>What this page does</h2>
-        <p>
-          The thesis harmonizes respondents from the European Social Survey (ESS, 2023&ndash;2024) and the European Election Study (EES, 2024) and links each respondent to the Chapel Hill Expert Survey (CHES, 2024) position of the party they support. This lets us place young Europeans consistently on three dimensions: left&ndash;right, postmaterialist vs traditional, and support for women&rsquo;s rights.
-        </p>
-      </div>
-
-      <div class="takeaways">
-        <article class="takeaway">
-          <strong>Plain language, thesis evidence</strong>
-          <span>The commentary under each figure is written in plain English but stays anchored to the empirical logic and conclusions of the dissertation.</span>
-        </article>
-        <article class="takeaway">
-          <strong>Live, interactive charts</strong>
-          <span>Hover, toggle legend entries, zoom, or download a PNG using the mode bar in the top-right of each chart.</span>
-        </article>
-        <article class="takeaway">
-          <strong>Two complementary views</strong>
-          <span>Each dimension is shown both by generation (Silent &rarr; Gen Z) and by year of birth with centered five-year rolling windows.</span>
-        </article>
-      </div>
     </section>
 
     <!-- ====================================================== -->
@@ -91,66 +61,60 @@
     <section id="left-right">
       <div class="section-head">
         <h2>Where young Europeans stand on left and right</h2>
-        <p>
-          The classic political axis. For each generation, the average party position of the respondents (female vs male) on the CHES left&ndash;right scale, where higher values mean placement toward the right. This is the dimension most often discussed in the press when people talk about &ldquo;young men turning conservative&rdquo;.
-        </p>
       </div>
+      <p class="section-intro">
+        The classic political axis. For each generation, the average party position of respondents (female vs male) on the CHES left&ndash;right scale, where higher values mean placement toward the right. This is the dimension most often discussed when people talk about &ldquo;young men turning conservative&rdquo;.
+      </p>
 
-      <figure class="figure-card">
-        <h3>Left&ndash;Right ideology by generation and gender, EU, 2024</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig06_lr_by_generation_gender.json">
-          <div class="plot-target" role="img" aria-label="Left-right ideology by generation and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Mean CHES-linked left&ndash;right party position for Female (red) and Male (blue) respondents by generation, with 95% confidence ribbons. Pooled EU27 estimates, n = 36,082.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>What to look at.</strong> For the Silent Generation and Baby Boomers the two gender lines are almost on top of each other. Starting with Gen X and even more with Millennials they begin to separate, and with Gen Z the gap widens sharply: young women drift to the left while young men remain noticeably to the right.
-        </p>
-      </figure>
+      <div class="chart-stack">
+        <figure class="figure-card chart-card">
+          <h3>Left&ndash;Right ideology by generation and gender</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig06_lr_by_generation_gender.json">
+            <div class="plot-target" role="img" aria-label="Left-right ideology by generation and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            For the Silent Generation and Baby Boomers the two gender lines are almost on top of each other. Starting with Gen X and even more with Millennials they begin to separate, and with Gen Z the gap widens sharply: young women drift to the left while young men remain noticeably to the right.
+          </p>
+          <p class="chart-note">Mean CHES left&ndash;right position, Female (red) vs Male (blue), by generation, with 95% CI ribbons. Pooled EU27, n = 36,082.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The left&ndash;right gender gap, generation by generation</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig07_gap_lr_by_generation.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in left-right ideology by generation, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gender gap in mean left&ndash;right position, |Female &minus; Male|, by generation. The dashed line is an anchored exponential fit between the first and last generation, for visual guidance only.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>The headline number.</strong> The Gen Z bar is about <strong>1.8 times</strong> the Millennial one. A left&ndash;right gap has always existed, but it has become clearly larger with the youngest cohort rather than stabilising.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The left&ndash;right gender gap, generation by generation</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig07_gap_lr_by_generation.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in left-right ideology by generation, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The Gen Z bar is about <strong>1.8&times; the Millennial one</strong>. A left&ndash;right gap has always existed, but it has become clearly larger with the youngest cohort rather than stabilising.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| in mean left&ndash;right position. The dashed line is an anchored exponential fit, for visual guidance only.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>Left&ndash;right ideology by year of birth and gender</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig12_lr_by_year_gender.json">
-          <div class="plot-target" role="img" aria-label="Left-right ideology by year of birth and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Smoothed means by year of birth and gender, centered five-year rolling windows with 95% confidence ribbons. Higher = right.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>Zooming into birth years.</strong> The same picture shows up at higher resolution: the two lines move together for respondents born before the late 1980s, then split after about 1990. That is the point the thesis identifies as the emergence of a <em>modern</em> gender gap, following Inglehart &amp; Norris (2000) and Giger (2009).
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>Left&ndash;right ideology by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig12_lr_by_year_gender.json">
+            <div class="plot-target" role="img" aria-label="Left-right ideology by year of birth and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The same picture at higher resolution: the two lines move together for respondents born before the late 1980s, then split after about 1990. That is the point the thesis identifies as the emergence of a <em>modern</em> gender gap, following Inglehart &amp; Norris (2000) and Giger (2009).
+          </p>
+          <p class="chart-note">Smoothed means with centered five-year rolling windows and 95% CI ribbons. Higher = right.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The left&ndash;right gender gap by year of birth</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig13_gap_lr_by_year.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in left-right ideology by year of birth, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gap |Female &minus; Male| in left&ndash;right means by year of birth, with loess-smoothed trend.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>A stable gap that suddenly widens.</strong> From the 1950s cohorts to the late 1980s the gap stays under about 0.3 points &mdash; a period Giger calls &ldquo;gender dealignment&rdquo;. From roughly 1990 onwards the curve bends upward: this is the signature of the modern gender gap.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The left&ndash;right gender gap by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig13_gap_lr_by_year.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in left-right ideology by year of birth, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            From the 1950s cohorts to the late 1980s the gap stays under about 0.3 points &mdash; a period Giger calls &ldquo;gender dealignment&rdquo;. From roughly 1990 onwards the curve bends upward: this is the signature of the modern gender gap.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| by year of birth, with loess-smoothed trend.</p>
+        </figure>
+      </div>
     </section>
 
     <!-- ====================================================== -->
@@ -159,66 +123,60 @@
     <section id="values">
       <div class="section-head">
         <h2>The real fault line: postmaterialist vs traditional values</h2>
-        <p>
-          The thesis argues that the sharpest gendered divide inside Gen Z is <em>not</em> on left&ndash;right, but on the cultural axis that runs from postmaterialist values (environment, minority rights, civil liberties) to traditional values (order, authority, traditional morality). Here higher values mean more traditional, lower values more postmaterialist.
-        </p>
       </div>
+      <p class="section-intro">
+        The thesis argues that the sharpest gendered divide inside Gen Z is <em>not</em> on left&ndash;right, but on the cultural axis that runs from postmaterialist values (environment, minority rights, civil liberties) to traditional values (order, authority, traditional morality). Here higher values mean more traditional, lower values more postmaterialist.
+      </p>
 
-      <figure class="figure-card">
-        <h3>Postmaterialist&ndash;Traditional values by generation and gender</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig10_galtan_by_generation_gender.json">
-          <div class="plot-target" role="img" aria-label="Postmaterialist-traditional values by generation and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Mean CHES GAL&ndash;TAN party positions by generation and gender, with 95% confidence ribbons. Higher = more traditional, lower = more postmaterialist.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>Two trajectories moving in opposite directions.</strong> Women become progressively more postmaterialist as we move from older to younger generations: Gen Z women are more progressive than Millennial women, who are in turn more progressive than Gen X women. Men do not follow the same path: Gen Z men reverse the previous male trend and swing back toward the traditional pole. This is what the thesis calls the &ldquo;flip&rdquo; that produces a cultural divide rather than a simple generational shift.
-        </p>
-      </figure>
+      <div class="chart-stack">
+        <figure class="figure-card chart-card">
+          <h3>Postmaterialist&ndash;Traditional values by generation and gender</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig10_galtan_by_generation_gender.json">
+            <div class="plot-target" role="img" aria-label="Postmaterialist-traditional values by generation and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            Two trajectories moving in opposite directions. Women become progressively more postmaterialist as we move from older to younger generations: Gen Z women are more progressive than Millennial women, who are in turn more progressive than Gen X women. Men do not follow the same path: Gen Z men reverse the previous male trend and swing back toward the traditional pole. This is what the thesis calls the &ldquo;flip&rdquo; that produces a cultural divide rather than a simple generational shift.
+          </p>
+          <p class="chart-note">Mean CHES GAL&ndash;TAN position, Female vs Male, by generation, with 95% CI ribbons. Higher = more traditional.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The cultural-values gender gap, generation by generation</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig11_gap_galtan_by_generation.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in postmaterialist-traditional values by generation, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gender gap in GAL&ndash;TAN means by generation, |Female &minus; Male|.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>This is where the divide is largest.</strong> The Gen Z bar is about <strong>2.1&times;</strong> the Millennial one, roughly <strong>three times</strong> the Gen X gap, and more than <strong>five times</strong> the Baby Boomer gap. Across the three dimensions examined in the thesis, the cultural axis is where the generational growth of the gender gap is most striking.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The cultural-values gender gap, generation by generation</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig11_gap_galtan_by_generation.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in postmaterialist-traditional values by generation, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            This is where the divide is largest. The Gen Z bar is about <strong>2.1&times; the Millennial one</strong>, roughly three times the Gen X gap, and more than five times the Baby Boomer gap. Across the three dimensions examined in the thesis, the cultural axis is where the generational growth of the gender gap is most striking.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| in GAL&ndash;TAN means by generation.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>Cultural values by year of birth and gender</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig14_galtan_by_year_gender.json">
-          <div class="plot-target" role="img" aria-label="Postmaterialist-traditional values by year of birth and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Smoothed CHES GAL&ndash;TAN means by year of birth and gender, centered five-year rolling windows with 95% confidence ribbons.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>The scissors open after 1990.</strong> For cohorts born up to the late 1980s the two lines essentially overlap. From 1990 onwards the female line bends downward (more postmaterialist) while the male line bends upward (more traditional): the two trajectories diverge like a pair of scissors opening.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>Cultural values by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig14_galtan_by_year_gender.json">
+            <div class="plot-target" role="img" aria-label="Postmaterialist-traditional values by year of birth and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            For cohorts born up to the late 1980s the two lines essentially overlap. From 1990 onwards the female line bends downward (more postmaterialist) while the male line bends upward (more traditional): the two trajectories diverge like a pair of scissors opening.
+          </p>
+          <p class="chart-note">Smoothed GAL&ndash;TAN means by year of birth, centered five-year rolling windows with 95% CI ribbons.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The cultural-values gender gap by year of birth</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig15_gap_galtan_by_year.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in postmaterialist-traditional values by year of birth, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gap |Female &minus; Male| in GAL&ndash;TAN means by year of birth, with loess-smoothed trend.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>A cultural, not an economic, cleavage.</strong> The smoothed curve stays close to zero through most of the 20th century and lifts off only for cohorts born in the 1990s and 2000s. The takeaway of the thesis: if you want to see where a new cultural divide is forming, look here first.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The cultural-values gender gap by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig15_gap_galtan_by_year.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in postmaterialist-traditional values by year of birth, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The smoothed curve stays close to zero through most of the 20th century and lifts off only for cohorts born in the 1990s and 2000s. The thesis takeaway: if you want to see where a new cultural divide is forming, look here first.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| by year of birth, with loess-smoothed trend.</p>
+        </figure>
+      </div>
     </section>
 
     <!-- ====================================================== -->
@@ -227,85 +185,110 @@
     <section id="women">
       <div class="section-head">
         <h2>Women&rsquo;s rights: a generational flip</h2>
-        <p>
-          The CHES women&rsquo;s-rights item measures how supportive a party is of expanding women&rsquo;s rights. Lower values mean more supportive, higher values less supportive. We look at the same two views: by generation and by year of birth.
-        </p>
       </div>
+      <p class="section-intro">
+        The CHES women&rsquo;s-rights item measures how supportive a party is of expanding women&rsquo;s rights. Lower values mean more supportive, higher values less supportive.
+      </p>
 
-      <figure class="figure-card">
-        <h3>Support for women&rsquo;s rights by generation and gender</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig08_wr_by_generation_gender.json">
-          <div class="plot-target" role="img" aria-label="Support for women's rights by generation and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Mean party position on the CHES women&rsquo;s-rights item by generation and gender, with 95% confidence ribbons. Lower = more supportive.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>Parallel lines, then a break.</strong> Across older generations the male and female lines move almost in parallel. With Gen Z the balance is broken: young men drop in support for women&rsquo;s rights while young women pull in the opposite direction. This is a sharper pattern than the slow parallel drift of previous generations.
-        </p>
-      </figure>
+      <div class="chart-stack">
+        <figure class="figure-card chart-card">
+          <h3>Support for women&rsquo;s rights by generation and gender</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig08_wr_by_generation_gender.json">
+            <div class="plot-target" role="img" aria-label="Support for women's rights by generation and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            Across older generations the male and female lines move almost in parallel. With Gen Z the balance is broken: young men drop in support for women&rsquo;s rights while young women pull in the opposite direction.
+          </p>
+          <p class="chart-note">Mean party position on the CHES women&rsquo;s-rights item, by generation, with 95% CI ribbons. Lower = more supportive.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The women&rsquo;s-rights gender gap, generation by generation</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig09_gap_wr_by_generation.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in support for women's rights by generation, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gender gap in CHES women&rsquo;s-rights means, |Female &minus; Male|, by generation.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>A 2.5&times; jump.</strong> The gap between young women and young men on women&rsquo;s rights is about <strong>2.5 times</strong> larger for Gen Z than for Millennials. Together with the cultural-values panel above, this is what makes the Gen Z divide qualitatively different, not just &ldquo;more of the same&rdquo;.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The women&rsquo;s-rights gender gap, generation by generation</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig09_gap_wr_by_generation.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in support for women's rights by generation, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The gap between young women and young men on women&rsquo;s rights is about <strong>2.5&times;</strong> larger for Gen Z than for Millennials. Together with the cultural-values panel above, this is what makes the Gen Z divide qualitatively different, not just &ldquo;more of the same&rdquo;.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| in women&rsquo;s-rights means by generation.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>Support for women&rsquo;s rights by year of birth and gender</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig16_wr_by_year_gender.json">
-          <div class="plot-target" role="img" aria-label="Support for women's rights by year of birth and gender, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Smoothed CHES women&rsquo;s-rights means by year of birth and gender, centered five-year rolling windows with 95% confidence ribbons. Lower = more supportive.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>Generational continuity, Gen Z rupture.</strong> The smoothed curves are remarkably flat until about birth year 1990. Then the male line begins to climb (less supportive) while the female line bends down (more supportive). The break is visible to the naked eye.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>Support for women&rsquo;s rights by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig16_wr_by_year_gender.json">
+            <div class="plot-target" role="img" aria-label="Support for women's rights by year of birth and gender, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The smoothed curves are remarkably flat until about birth year 1990. Then the male line begins to climb (less supportive) while the female line bends down (more supportive). The break is visible to the naked eye.
+          </p>
+          <p class="chart-note">Smoothed women&rsquo;s-rights means by year of birth, centered five-year rolling windows with 95% CI ribbons.</p>
+        </figure>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>The women&rsquo;s-rights gender gap by year of birth</h3>
-        <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig17_gap_wr_by_year.json">
-          <div class="plot-target" role="img" aria-label="Absolute gender gap in support for women's rights by year of birth, EU 2024"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
-        </div>
-        <figcaption class="figure-caption">
-          Absolute gap |Female &minus; Male| in women&rsquo;s-rights means by year of birth, with loess-smoothed trend.
-        </figcaption>
-        <p class="figure-comment">
-          <strong>The thesis pattern, confirmed on a third dimension.</strong> Left&ndash;right, cultural values, and women&rsquo;s rights all tell the same story: a stable low gap for cohorts born before 1990, then a rapid opening. It is the convergence of evidence across dimensions that makes the thesis treat this as a real cleavage rather than a statistical artefact.
-        </p>
-      </figure>
+        <figure class="figure-card chart-card">
+          <h3>The women&rsquo;s-rights gender gap by year of birth</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase1/fig17_gap_wr_by_year.json">
+            <div class="plot-target" role="img" aria-label="Absolute gender gap in support for women's rights by year of birth, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            Left&ndash;right, cultural values, and women&rsquo;s rights all tell the same story: a stable low gap for cohorts born before 1990, then a rapid opening. It is the convergence of evidence across dimensions that makes the thesis treat this as a real cleavage rather than a statistical artefact.
+          </p>
+          <p class="chart-note">Absolute gap |Female &minus; Male| by year of birth, with loess-smoothed trend.</p>
+        </figure>
+      </div>
     </section>
 
     <!-- ====================================================== -->
-    <!-- 4. FOUR EUROPES (existing regime explorer, renamed)     -->
+    <!-- 4. EXTREMES (Phase 2)                                    -->
+    <!-- ====================================================== -->
+    <section id="extremes">
+      <div class="section-head">
+        <h2>Who ends up at the political extremes</h2>
+      </div>
+      <p class="section-intro">
+        Averages can hide polarization: a generation can have a centrist mean while being internally split between two poles. Here respondents are re-classified as <em>strongly progressive</em> (CHES &le; 2.5) or <em>strongly traditional</em> (CHES &ge; 7.5) on the postmaterialist&ndash;traditional axis, and we track how the balance between these poles moves from one generation to the next, separately for women and men.
+      </p>
+
+      <div class="chart-stack">
+        <figure class="figure-card chart-card">
+          <h3>How the balance of extremes moves across generations</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase2/fig_f1_transitions_by_gender.json">
+            <div class="plot-target" role="img" aria-label="Change in progressive vs traditional balance across generational transitions, by gender"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            Each dot is one generational transition: how much a new generation shifts the balance between progressive and traditional extremes, in percentage points. Women (red) and men (blue) broadly moved in the same direction until Gen X, both becoming much more progressive in the Gen X &rarr; Millennials step. In the Millennials &rarr; Gen Z step the two lines diverge sharply: women stay in progressive territory, men swing back toward the traditional pole. The green vertical segments show the size of that gap at each transition.
+          </p>
+          <p class="chart-note">Change in the progressive&minus;traditional balance (% strongly progressive &minus; % strongly traditional) per generational transition, in percentage points. Pooled EU27.</p>
+        </figure>
+
+        <figure class="figure-card chart-card">
+          <h3>Gender Divergence in Change (GDC) index</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase2/fig_f2_gdc_index_transitions.json">
+            <div class="plot-target" role="img" aria-label="GDC index across generational transitions, bar chart"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede">
+            The GDC index condenses the previous chart into a single number per transition: the absolute distance between the female and male generational shifts. The Millennials &rarr; Gen Z bar stands out: <strong>9.2 percentage points</strong>, against 0.6 for the immediately preceding Gen X &rarr; Millennials transition. That is an order of magnitude larger than any other generational step measured here.
+          </p>
+          <p class="chart-note">GDC = |female change &minus; male change| per transition, percentage points. Pooled EU27.</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================================================== -->
+    <!-- 5. FOUR EUROPES (existing regime explorer, trimmed)     -->
     <!-- ====================================================== -->
     <section id="regimes">
       <div class="section-head">
         <h2>Four Europes, four gender gaps</h2>
-        <p>
-          The gap is not equally wide everywhere. This block compares four welfare-regime families &mdash; Social Democratic, Conservative, Mediterranean and Post-Socialist &mdash; using the regime figures generated for the thesis. Use the selector to move across regimes and read the exact Gen Z numbers.
-        </p>
       </div>
-
-      <article class="card placeholder-card" style="margin-bottom: 18px;">
-        <div class="eyebrow">Note</div>
-        <p>
-          The five regime figures below are the original thesis SVG exports. They will be replaced with fully interactive Plotly versions in the next update, together with the country-level gap map.
-        </p>
-      </article>
+      <p class="section-intro">
+        The gap is not equally wide everywhere. This block compares four welfare-regime families &mdash; Social Democratic, Conservative, Mediterranean and Post-Socialist &mdash; using the regime figures generated for the thesis. Use the selector to move across regimes and read the exact Gen Z numbers. These figures will be swapped for interactive versions in the next update.
+      </p>
 
       <div class="card regime-toolbar">
         <div class="toolbar-top">
@@ -326,92 +309,42 @@
           <div class="figure-frame" style="margin-top: 14px;">
             <img src="assets/maps/welfare_regimes_eu.svg" alt="EU member states grouped by welfare regime" />
           </div>
-          <figcaption class="figure-caption">
+          <p class="chart-lede">
             Regime categories used in the thesis: Social Democratic, Conservative, Mediterranean, and Post-Socialist. The grouping follows the analytical use of welfare-state typologies in the comparative literature rather than suggesting national uniformity.
-          </figcaption>
-          <p class="figure-comment">
-            <strong>Why the regime map matters.</strong> The thesis is not only asking whether a gender gap exists, but whether institutional context helps us understand where that gap widens, stabilizes, or changes shape.
           </p>
         </figure>
 
         <aside class="figure-card">
           <h3>Selected regime at a glance</h3>
-          <p class="figure-caption">
-            These cards update from the thesis CSV outputs and give a compact reading aid for the selected regime.
-          </p>
           <div class="metrics" style="margin-top: 14px;">
-            <div class="metric">
-              <span>Countries</span>
-              <strong id="country-list">-</strong>
-            </div>
-            <div class="metric">
-              <span>Total regime sample</span>
-              <strong id="regime-total-sample">-</strong>
-            </div>
-            <div class="metric">
-              <span>Gen Z female mean</span>
-              <strong id="female-mean">-</strong>
-            </div>
-            <div class="metric">
-              <span>Gen Z male mean</span>
-              <strong id="male-mean">-</strong>
-            </div>
-          </div>
-          <div class="callout" style="margin-top: 14px;">
-            <strong>Why the regime split matters</strong>
-            The welfare-regime lens helps compare broad institutional environments without flattening everything into a single European average.
+            <div class="metric"><span>Countries</span><strong id="country-list">-</strong></div>
+            <div class="metric"><span>Total regime sample</span><strong id="regime-total-sample">-</strong></div>
+            <div class="metric"><span>Gen Z female mean</span><strong id="female-mean">-</strong></div>
+            <div class="metric"><span>Gen Z male mean</span><strong id="male-mean">-</strong></div>
+            <div class="metric"><span>Female 95% CI</span><strong id="female-ci">-</strong></div>
+            <div class="metric"><span>Male 95% CI</span><strong id="male-ci">-</strong></div>
+            <div class="metric"><span>Absolute gap</span><strong id="gap-value">-</strong></div>
+            <div class="metric"><span>Regime sample</span><strong id="genz-panel-sample">-</strong></div>
+            <div class="metric"><span>GDC index</span><strong id="gdc-value">-</strong></div>
+            <div class="metric"><span>Gap rank / GDC rank</span><strong><span id="gap-rank">-</span> &middot; <span id="gdc-rank">-</span></strong></div>
+            <div class="metric"><span>&Delta; Female (Mill. &rarr; Z)</span><strong id="delta-f">-</strong></div>
+            <div class="metric"><span>&Delta; Male (Mill. &rarr; Z)</span><strong id="delta-m">-</strong></div>
           </div>
         </aside>
       </div>
 
-      <div class="figure-grid" style="margin-top: 18px;">
-        <figure class="figure-card">
-          <h3>Cultural values by generation and gender, in the selected regime</h3>
-          <div class="figure-frame" style="margin-top: 14px;">
-            <img
-              id="evolution-figure"
-              src="assets/figures/evolution_galtan_Conservative.svg"
-              alt="Original thesis chart for the Conservative regime"
-            />
-          </div>
-          <figcaption class="figure-caption">
-            Original thesis figure for <strong data-selected-regime>Conservative</strong>. Higher values indicate movement toward the traditional pole; lower values indicate movement toward the postmaterialist pole. Source: EES 2024, ESS 2023&ndash;2024, CHES 2024.
-          </figcaption>
-          <p class="figure-comment">
-            <strong>Comment.</strong>
-            <span id="evolution-comment">Loading&hellip;</span>
-          </p>
-        </figure>
-
-        <aside class="figure-card">
-          <h3>How to read the selected regime</h3>
-          <p class="figure-caption">
-            These values come from the same final aggregated CSV used to generate the figure above.
-          </p>
-          <div class="metrics" style="margin-top: 14px;">
-            <div class="metric">
-              <span>Regime sample</span>
-              <strong id="genz-panel-sample">-</strong>
-            </div>
-            <div class="metric">
-              <span>Female 95% CI</span>
-              <strong id="female-ci">-</strong>
-            </div>
-            <div class="metric">
-              <span>Male 95% CI</span>
-              <strong id="male-ci">-</strong>
-            </div>
-            <div class="metric">
-              <span>Absolute gap</span>
-              <strong id="gap-value">-</strong>
-            </div>
-          </div>
-          <div class="callout">
-            <strong>Reading tip</strong>
-            The line chart is about trajectories across generations. It shows whether the gender split is mainly a Gen Z level difference or the outcome of diverging generational movement.
-          </div>
-        </aside>
-      </div>
+      <figure class="figure-card" style="margin-top: 18px;">
+        <h3>Cultural values by generation and gender, in the selected regime</h3>
+        <div class="figure-frame" style="margin-top: 14px;">
+          <img
+            id="evolution-figure"
+            src="assets/figures/evolution_galtan_Conservative.svg"
+            alt="Original thesis chart for the Conservative regime"
+          />
+        </div>
+        <p class="chart-lede"><span id="evolution-comment">Loading&hellip;</span></p>
+        <p class="chart-note">Original thesis figure for <strong data-selected-regime>Conservative</strong>. Higher = traditional, lower = postmaterialist. Sources: EES 2024, ESS 2023&ndash;2024, CHES 2024.</p>
+      </figure>
 
       <div class="two-col" style="margin-top: 18px;">
         <figure class="figure-card">
@@ -419,13 +352,7 @@
           <div class="figure-frame" style="margin-top: 14px;">
             <img src="assets/figures/genz_galtan_by_regime.svg" alt="Original thesis grouped-bar chart for Gen Z by welfare regime" />
           </div>
-          <figcaption class="figure-caption">
-            Grouped-bar comparison for the full Gen Z panel. The colored regime labels and the female/male bars follow the original thesis output.
-          </figcaption>
-          <p class="figure-comment">
-            <strong>Comment.</strong>
-            <span id="grouped-comment">Loading&hellip;</span>
-          </p>
+          <p class="chart-lede"><span id="grouped-comment">Loading&hellip;</span></p>
         </figure>
 
         <figure class="figure-card">
@@ -433,99 +360,34 @@
           <div class="figure-frame" style="margin-top: 14px;">
             <img src="assets/figures/abs_gap_genz_galtan_by_regime.svg" alt="Original thesis bar chart for the absolute Gen Z gender gap" />
           </div>
-          <figcaption class="figure-caption">
-            Absolute difference in CHES GAL&ndash;TAN mean between Gen Z women and men inside each welfare regime.
-          </figcaption>
-          <p class="figure-comment">
-            <strong>Comment.</strong>
-            <span id="gap-comment">Loading&hellip;</span>
-          </p>
+          <p class="chart-lede"><span id="gap-comment">Loading&hellip;</span></p>
         </figure>
       </div>
 
-      <div class="figure-grid" style="margin-top: 18px;">
-        <figure class="figure-card">
-          <h3>Gender Divergence in Change (GDC) index</h3>
-          <div class="figure-frame" style="margin-top: 14px;">
-            <img src="assets/figures/GDC_Millennials_to_GenZ_by_regime_general_style.svg" alt="Original thesis GDC chart by welfare regime" />
-          </div>
-          <figcaption class="figure-caption">
-            The GDC figure shifts attention from level differences to generational movement. It asks how differently women and men change from Millennials to Gen Z in the balance between progressive and traditional extremes.
-          </figcaption>
-          <p class="figure-comment">
-            <strong>Comment.</strong>
-            <span id="gdc-comment">Loading&hellip;</span>
-          </p>
-        </figure>
-
-        <aside class="figure-card">
-          <h3>Selected regime: exact readout</h3>
-          <p class="figure-caption">
-            These values help interpret the three regime figures above for the currently selected regime without changing the original images.
-          </p>
-          <div class="metrics" style="margin-top: 14px;">
-            <div class="metric">
-              <span>Gap rank</span>
-              <strong id="gap-rank">-</strong>
-            </div>
-            <div class="metric">
-              <span>GDC rank</span>
-              <strong id="gdc-rank">-</strong>
-            </div>
-            <div class="metric">
-              <span>GDC index</span>
-              <strong id="gdc-value">-</strong>
-            </div>
-            <div class="metric">
-              <span>Female shift</span>
-              <strong id="delta-f">-</strong>
-            </div>
-          </div>
-          <div class="detail-list">
-            <div><span>Male shift</span><strong id="delta-m">-</strong></div>
-            <div><span>Interpretive focus</span><strong>Divergence in change</strong></div>
-            <div><span>Selected regime</span><strong data-selected-regime>Conservative</strong></div>
-          </div>
-          <div class="callout">
-            <strong>Why GDC matters</strong>
-            A large level gap and a large GDC are not the same thing. GDC becomes high when women and men do not merely end up apart, but arrive there through different generational shifts.
-          </div>
-        </aside>
-      </div>
+      <figure class="figure-card" style="margin-top: 18px;">
+        <h3>Gender Divergence in Change (GDC) index by regime</h3>
+        <div class="figure-frame" style="margin-top: 14px;">
+          <img src="assets/figures/GDC_Millennials_to_GenZ_by_regime_general_style.svg" alt="Original thesis GDC chart by welfare regime" />
+        </div>
+        <p class="chart-lede"><span id="gdc-comment">Loading&hellip;</span></p>
+        <p class="chart-note">The GDC shifts attention from level differences to generational movement: how differently women and men change from Millennials to Gen Z in the balance between progressive and traditional extremes.</p>
+      </figure>
     </section>
 
     <!-- ====================================================== -->
-    <!-- 5. EXTREMES placeholder (ex-4.2)                         -->
-    <!-- ====================================================== -->
-    <section id="extremes">
-      <div class="section-head">
-        <h2>Who ends up at the political extremes</h2>
-        <p>
-          Averages can hide polarization: a generation can have a centrist mean while being internally split between two extremes. The next block in the thesis reclassifies respondents as &ldquo;strongly progressive&rdquo; (CHES &le; 2.5) or &ldquo;strongly traditional&rdquo; (CHES &ge; 7.5) and tracks how male and female cohorts distribute themselves between these poles.
-        </p>
-      </div>
-      <article class="card placeholder-card">
-        <div class="eyebrow">Coming next</div>
-        <p>
-          The four interactive figures for this block will be added here as soon as the Phase 2 outputs are wired in: the overall share at the progressive or traditional extremes across generations; the same decomposition by gender; the generational balance of extremes; and the Gender Divergence in Change (GDC) index from Millennials to Gen Z.
-        </p>
-      </article>
-    </section>
-
-    <!-- ====================================================== -->
-    <!-- 6. PREDICTORS placeholder (ex-4.4)                      -->
+    <!-- 6. PREDICTORS placeholder                                -->
     <!-- ====================================================== -->
     <section id="predictors">
       <div class="section-head">
         <h2>What explains the divide</h2>
-        <p>
-          Once the gap is mapped, the thesis asks <em>who</em> inside Gen Z drives it. This final block examines individual-level predictors of the cultural-values position: economic difficulty, education, place of residence, parental origin, religious attendance and denomination, employment status, and occupational class.
-        </p>
       </div>
+      <p class="section-intro">
+        Once the gap is mapped, the thesis asks <em>who</em> inside Gen Z drives it. This final block examines individual-level predictors of the cultural-values position: economic difficulty, education, place of residence, parental origin, religious attendance and denomination, employment status, and occupational class.
+      </p>
       <article class="card placeholder-card">
         <div class="eyebrow">Coming next</div>
         <p>
-          The interactive versions of these predictor figures will be added here once the Phase 4 outputs are wired in, covering each predictor from economic difficulty through occupational class.
+          The interactive versions of these predictor figures will appear here once the Phase 4 outputs are wired in.
         </p>
       </article>
     </section>
@@ -533,37 +395,22 @@
     <section id="method">
       <div class="section-head">
         <h2>Method in brief</h2>
-        <p>
-          The thesis links party choices recorded in the European Social Survey and the European Election Study to party-position estimates from the Chapel Hill Expert Survey, then compares those linked positions across generations, gender, and welfare regimes.
-        </p>
       </div>
-
-      <div class="lead-grid">
-        <article class="card">
-          <p>
-            Year-of-birth trends are smoothed with centered five-year rolling windows to stabilise estimates while preserving generational change. Generational categories run from the Silent Generation through Gen Z. Extreme party positions are trimmed to reduce the influence of outliers, and sensitivity checks confirm that substantive conclusions remain robust.
-          </p>
-          <p>
-            Pooled EU27 sample, n &asymp; 36,000 depending on the dimension. The charts on this page are the interactive counterparts of the static thesis figures and use the same underlying aggregates.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="eyebrow">Figure design reference</div>
-          <p>
-            The regime figures still shown as SVGs are the original thesis outputs generated by the regime-analysis script. This is why the site keeps the original title wording, captions, colors, and regime order instead of replacing them with a new design system. They will be upgraded to interactive Plotly versions in the next update.
-          </p>
-        </article>
-      </div>
+      <p class="section-intro">
+        The thesis harmonizes respondents from the European Social Survey (ESS, fieldwork 2023&ndash;2024) and the European Election Study (EES, fieldwork 2024) and links each respondent to the position of their supported party in the Chapel Hill Expert Survey (CHES, 2024). This produces consistent scores on three dimensions &mdash; left&ndash;right, postmaterialist&ndash;traditional, and support for women&rsquo;s rights.
+      </p>
+      <p class="section-intro">
+        Year-of-birth trends are smoothed with centered five-year rolling windows to stabilise estimates. Generational categories run from the Silent Generation through Gen Z. Extreme party positions are trimmed to reduce outlier influence, and sensitivity checks confirm that substantive conclusions remain robust. Pooled EU27 sample, n &asymp; 36,000 depending on the dimension.
+      </p>
     </section>
 
     <section id="references">
       <div class="section-head">
         <h2>APA references</h2>
-        <p>
-          The figures and commentary on this page are based on the thesis itself, on the final analysis outputs, and on the data sources cited in the dissertation.
-        </p>
       </div>
+      <p class="section-intro">
+        The figures and commentary on this page are based on the thesis itself, on the final analysis outputs, and on the data sources cited in the dissertation.
+      </p>
 
       <ol class="references">
         <li>
