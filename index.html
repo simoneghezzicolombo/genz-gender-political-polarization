@@ -287,7 +287,7 @@
         <h2>Four Europes, four gender gaps</h2>
       </div>
       <p class="section-intro">
-        The gap is not equally wide everywhere. This block compares four welfare-regime families &mdash; Social Democratic, Conservative, Mediterranean and Post-Socialist &mdash; using the regime figures generated for the thesis. Use the selector to move across regimes and read the exact Gen Z numbers. These figures will be swapped for interactive versions in the next update.
+        The gap is not equally wide everywhere. Four welfare&ndash;regime families &mdash; <strong>Social Democratic</strong>, <strong>Conservative</strong>, <strong>Mediterranean</strong> and <strong>Post-Socialist</strong> &mdash; tell four different stories about where young women and young men are actually landing. Pick a regime to see its own generational trajectory, then compare across regimes in the charts below.
       </p>
 
       <div class="card regime-toolbar">
@@ -333,44 +333,63 @@
         </aside>
       </div>
 
-      <figure class="figure-card" style="margin-top: 18px;">
-        <h3>Cultural values by generation and gender, in the selected regime</h3>
-        <div class="figure-frame" style="margin-top: 14px;">
-          <img
-            id="evolution-figure"
-            src="assets/figures/evolution_galtan_Conservative.svg"
-            alt="Original thesis chart for the Conservative regime"
-          />
+      <figure class="figure-card chart-card" style="margin-top: 18px;">
+        <h3>Cultural values by generation and gender &mdash; <span data-selected-regime>Conservative</span></h3>
+        <div
+          id="evolution-chart"
+          class="figure-frame plot-frame"
+          data-interactive
+          data-src="data/interactive/phase3/fig_p3_evolution_conservative.json"
+        >
+          <div class="plot-target" role="img" aria-label="Interactive evolution of the GAL-TAN mean by generation and gender, for the selected welfare regime"></div>
+          <div class="plot-status">Preparing interactive chart&hellip;</div>
         </div>
         <p class="chart-lede"><span id="evolution-comment">Loading&hellip;</span></p>
-        <p class="chart-note">Original thesis figure for <strong data-selected-regime>Conservative</strong>. Higher = traditional, lower = postmaterialist. Sources: EES 2024, ESS 2023&ndash;2024, CHES 2024.</p>
+        <p class="chart-note">Higher y = more traditional values; lower y = more postmaterialist values. Shaded bands show the 95% confidence interval around each mean. Click a regime above to swap the chart. Sources: EES 2024, ESS 2023&ndash;2024, CHES 2024.</p>
       </figure>
 
       <div class="two-col" style="margin-top: 18px;">
-        <figure class="figure-card">
-          <h3>Gen Z by welfare regime</h3>
-          <div class="figure-frame" style="margin-top: 14px;">
-            <img src="assets/figures/genz_galtan_by_regime.svg" alt="Original thesis grouped-bar chart for Gen Z by welfare regime" />
+        <figure class="figure-card chart-card">
+          <h3>Gen Z means by welfare regime</h3>
+          <div
+            class="figure-frame plot-frame"
+            data-interactive
+            data-src="data/interactive/phase3/fig_p3_genz_by_regime.json"
+          >
+            <div class="plot-target" role="img" aria-label="Grouped-bar chart of Gen Z GAL-TAN means by welfare regime, Female vs Male"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
           </div>
           <p class="chart-lede"><span id="grouped-comment">Loading&hellip;</span></p>
+          <p class="chart-note">Red = Female, navy = Male. Hover each bar for the exact Gen Z mean in that regime.</p>
         </figure>
 
-        <figure class="figure-card">
+        <figure class="figure-card chart-card">
           <h3>Absolute Gen Z gender gap by regime</h3>
-          <div class="figure-frame" style="margin-top: 14px;">
-            <img src="assets/figures/abs_gap_genz_galtan_by_regime.svg" alt="Original thesis bar chart for the absolute Gen Z gender gap" />
+          <div
+            class="figure-frame plot-frame"
+            data-interactive
+            data-src="data/interactive/phase3/fig_p3_abs_gap_by_regime.json"
+          >
+            <div class="plot-target" role="img" aria-label="Bar chart of the absolute Gen Z gender gap on the GAL-TAN axis, by welfare regime"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
           </div>
           <p class="chart-lede"><span id="gap-comment">Loading&hellip;</span></p>
+          <p class="chart-note">Height = |Female mean &minus; Male mean| among Gen Z. Larger = wider split <em>today</em>, regardless of how they got there.</p>
         </figure>
       </div>
 
-      <figure class="figure-card" style="margin-top: 18px;">
+      <figure class="figure-card chart-card" style="margin-top: 18px;">
         <h3>Gender Divergence in Change (GDC) index by regime</h3>
-        <div class="figure-frame" style="margin-top: 14px;">
-          <img src="assets/figures/GDC_Millennials_to_GenZ_by_regime_general_style.svg" alt="Original thesis GDC chart by welfare regime" />
+        <div
+          class="figure-frame plot-frame"
+          data-interactive
+          data-src="data/interactive/phase3/fig_p3_gdc_by_regime.json"
+        >
+          <div class="plot-target" role="img" aria-label="Bar chart of the GDC index from Millennials to Gen Z, by welfare regime"></div>
+          <div class="plot-status">Preparing interactive chart&hellip;</div>
         </div>
         <p class="chart-lede"><span id="gdc-comment">Loading&hellip;</span></p>
-        <p class="chart-note">The GDC shifts attention from level differences to generational movement: how differently women and men change from Millennials to Gen Z in the balance between progressive and traditional extremes.</p>
+        <p class="chart-note">The GDC shifts attention from level differences to generational movement: <em>how differently</em> women and men change from Millennials to Gen Z in the balance between progressive and traditional extremes.</p>
       </figure>
     </section>
 
