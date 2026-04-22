@@ -48,6 +48,42 @@
     };
   }
 
+  function isNarrowViewport() {
+    return window.matchMedia && window.matchMedia("(max-width: 640px)").matches;
+  }
+
+  function applyResponsiveLayout(layout) {
+    if (!isNarrowViewport()) return layout;
+    // Scale down margins, title and tick font sizes on phones so the chart
+    // still breathes inside ~360px wide viewports.
+    layout.margin = Object.assign({}, layout.margin || {}, {
+      l: Math.min((layout.margin && layout.margin.l) || 56, 48),
+      r: Math.min((layout.margin && layout.margin.r) || 28, 16),
+      t: Math.min((layout.margin && layout.margin.t) || 56, 56),
+      b: Math.min((layout.margin && layout.margin.b) || 56, 64),
+    });
+    if (layout.title && typeof layout.title === "object") {
+      layout.title = Object.assign({}, layout.title, {
+        font: Object.assign({ size: 13 }, layout.title.font || {}, { size: 13 }),
+      });
+    }
+    layout.font = Object.assign({ size: 11 }, layout.font || {}, { size: 11 });
+    if (layout.legend) {
+      layout.legend = Object.assign({}, layout.legend, {
+        font: Object.assign({ size: 11 }, layout.legend.font || {}),
+      });
+    }
+    if (layout.xaxis) {
+      layout.xaxis = Object.assign({}, layout.xaxis);
+      if (typeof layout.xaxis.tickangle !== "number") layout.xaxis.tickangle = -25;
+      layout.xaxis.automargin = true;
+    }
+    if (layout.yaxis) {
+      layout.yaxis = Object.assign({}, layout.yaxis, { automargin: true });
+    }
+    return layout;
+  }
+
   async function renderContainer(container) {
     if (container.dataset.rendered === "true") return;
     const src = container.dataset.src;
@@ -57,7 +93,10 @@
     const plot = container.querySelector(".plot-target");
     const status = container.querySelector(".plot-status");
     try {
-      if (status) status.textContent = "Loading interactive chart...";
+      if (status) {
+        status.textContent = "Loading interactive chart...";
+        status.style.display = "";
+      }
       const [Plotly, fig] = await Promise.all([
         ensurePlotly(),
         fetch(src).then((r) => {
@@ -77,6 +116,8 @@
       // Ensure a readable hovermode if missing
       if (!layout.hovermode) layout.hovermode = "closest";
 
+      applyResponsiveLayout(layout);
+
       const cfg = Object.assign(configFor(container), fig.config || {});
       cfg.displaylogo = false;
       cfg.responsive = true;
@@ -84,14 +125,19 @@
       await Plotly.newPlot(plot, fig.data || [], layout, cfg);
       if (status) status.remove();
 
-      // Keep responsive on resize
-      window.addEventListener(
-        "resize",
-        () => {
-          if (plot.isConnected) Plotly.Plots.resize(plot);
-        },
-        { passive: true }
-      );
+      // Keep responsive on resize: redraw + reapply mobile-aware layout tweaks
+      const onResize = () => {
+        if (!plot.isConnected) return;
+        const relayout = applyResponsiveLayout(Object.assign({}, fig.layout || {}));
+        Plotly.relayout(plot, {
+          "margin.l": relayout.margin.l,
+          "margin.r": relayout.margin.r,
+          "margin.t": relayout.margin.t,
+          "margin.b": relayout.margin.b,
+        }).catch(() => {});
+        Plotly.Plots.resize(plot);
+      };
+      window.addEventListener("resize", onResize, { passive: true });
     } catch (err) {
       container.dataset.rendered = "false";
       console.error("Interactive chart failed:", src, err);
@@ -114,6 +160,27 @@
       }
     }
   }
+
+  async function remountContainer(container, newSrc) {
+    if (!container) return;
+    if (newSrc) container.dataset.src = newSrc;
+    const plot = container.querySelector(".plot-target");
+    if (plot && window.Plotly && typeof window.Plotly.purge === "function") {
+      try { window.Plotly.purge(plot); } catch (_) {}
+    }
+    container.dataset.rendered = "false";
+    // Re-attach a status overlay if it was removed after a successful render
+    if (!container.querySelector(".plot-status")) {
+      const status = document.createElement("div");
+      status.className = "plot-status";
+      status.textContent = "Loading interactive chart...";
+      container.appendChild(status);
+    }
+    return renderContainer(container);
+  }
+
+  window.InteractiveCharts = window.InteractiveCharts || {};
+  window.InteractiveCharts.remount = remountContainer;
 
   function init() {
     const containers = Array.from(document.querySelectorAll("[data-interactive]"));

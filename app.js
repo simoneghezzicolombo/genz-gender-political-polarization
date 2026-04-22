@@ -4,54 +4,54 @@ const regimeMeta = {
   "Conservative": {
     color: "#1F3552",
     countries: "Austria, Belgium, Germany, France, Luxembourg, Netherlands, Ireland",
-    evolutionFile: "assets/figures/evolution_galtan_Conservative.svg",
+    evolutionFile: "data/interactive/phase3/fig_p3_evolution_conservative.json",
     evolutionComment:
-      "This is the sharpest case of divergence in the regime analysis: Gen Z men remain distinctly higher on the traditional side of the scale, while the female trajectory trends lower.",
+      "This is the sharpest generational split in the whole regime picture. In Conservative Europe, young men stay planted on the traditional side of the cultural axis while young women pull clearly toward postmaterialist values \u2014 so the female line bends down while the male line barely moves.",
     groupedComment:
-      "The grouped bars make the Conservative spread immediately readable: the distance is not the largest absolute gap in the figure, but it sits inside the regime where generational divergence is strongest.",
+      "Looking only at Gen Z, the Conservative gap is wide enough to be read at a glance, but it is not the widest bar in the figure. The point is the combination: a solid gap today <em>plus</em> the largest generational divergence out of the four regimes.",
     gapComment:
-      "The absolute Gen Z gap is large and visible even before looking at generational change. In substantive terms, young women and young men are already landing in different parts of the cultural space.",
+      "The absolute Gen Z gap in Conservative Europe is sizeable even before bringing generations into the picture: young women and young men are already living in two different parts of the cultural space.",
     gdcComment:
-      "The GDC index peaks here. That means the transition from Millennials to Gen Z unfolds differently for women and men, not just that their final Gen Z averages are far apart."
+      "The GDC peaks here. The transition from Millennials to Gen Z is not only big, it is strongly <em>gendered</em>: women and men move in opposite directions rather than together."
   },
   "Mediterranean": {
     color: "#E67E22",
     countries: "Cyprus, Spain, Greece, Italy, Malta, Portugal",
-    evolutionFile: "assets/figures/evolution_galtan_Mediterranean.svg",
+    evolutionFile: "data/interactive/phase3/fig_p3_evolution_mediterranean.json",
     evolutionComment:
-      "The Mediterranean pattern is still clearly gendered, but the movement from Millennials to Gen Z is less dramatic than in the Conservative and Post-Socialist clusters.",
+      "Mediterranean Europe also splits its young generation by gender, but more quietly. The female and male trajectories move apart from Millennials onward without the dramatic hinge you see in the Conservative cluster.",
     groupedComment:
-      "The grouped bars show a visible split in Gen Z, but also remind us that Mediterranean Europe does not stand apart because of exceptionally high average traditionalism.",
+      "Gen Z still splits into two clearly different bars, yet the Mediterranean cluster is not defined by unusually high traditionalism. The story here is the <em>persistence</em> of the gap in a setting people often describe through delayed adulthood and family-based welfare.",
     gapComment:
-      "The absolute gap remains substantial. The key point is not exceptionality, but persistence: the divide survives even in a regime cluster often described through delayed youth transitions and familistic welfare arrangements.",
+      "The absolute Gen Z gap is comparable to the other clusters: young women and young men are landing in meaningfully different positions, even if the level of traditionalism is not extreme.",
     gdcComment:
-      "Here the GDC is moderate. The regime shows divergence, but less of the sharp generational break that appears in Conservative Europe."
+      "The GDC here is moderate: there is divergence in how women and men shift from Millennials to Gen Z, but it is less sharp than in Conservative or Post-Socialist Europe."
   },
   "Post-Socialist": {
     color: "#8B2D56",
     countries: "Bulgaria, Croatia, Czechia, Estonia, Hungary, Lithuania, Latvia, Poland, Romania, Slovakia, Slovenia",
-    evolutionFile: "assets/figures/evolution_galtan_Post_Socialist.svg",
+    evolutionFile: "data/interactive/phase3/fig_p3_evolution_post_socialist.json",
     evolutionComment:
-      "Post-Socialist Europe stands out because both female and male Gen Z averages sit relatively high on the traditional side, with men reaching the highest mean in the regime comparison.",
+      "Post-Socialist Europe is the most traditional cluster overall. Both young women and young men score high on the cultural axis, and young men reach the <em>highest</em> male mean in the whole comparison \u2014 the gender split happens on top of an already conservative baseline.",
     groupedComment:
-      "This regime combines a clear gender split with a generally more traditional baseline, which makes it central to the thesis argument about cross-European variation inside the same generational story.",
+      "The Gen Z bars here are the tallest among the four regimes for men, and the split between women and men is clearly visible. This combination \u2014 traditional baseline plus gender gap \u2014 is what makes Post-Socialist Europe central to the thesis argument.",
     gapComment:
-      "The absolute gap is not the biggest bar in the figure, but it comes on top of the most traditional overall positioning. That combination matters analytically.",
+      "The absolute gap is not the largest bar in the figure, but it layers on top of the most traditional positioning of the whole regime comparison. That is what matters analytically.",
     gdcComment:
-      "The GDC is also very high here, showing that the path from Millennials to Gen Z is strongly gendered rather than uniformly conservative."
+      "The GDC is also very high here: the move from Millennials to Gen Z is strongly <em>gendered</em> rather than a uniform conservative drift shared by both sexes."
   },
   "Social Democratic": {
     color: "#D62828",
     countries: "Denmark, Finland, Sweden",
-    evolutionFile: "assets/figures/evolution_galtan_Social_Democratic.svg",
+    evolutionFile: "data/interactive/phase3/fig_p3_evolution_social_democratic.json",
     evolutionComment:
-      "The Social Democratic cluster still shows a visible gender split, but the generational trajectories remain closer to one another than in the Conservative and Post-Socialist cases.",
+      "The Nordic cluster still shows a visible gender split among Gen Z, but the female and male trajectories stay closer together across generations than in the Conservative and Post-Socialist cases.",
     groupedComment:
-      "The grouped bars make a useful corrective: even in the cluster with the smallest divergence-in-change score, Gen Z women and men do not fully converge.",
+      "Even in the regime with the smallest generational divergence, Gen Z women and men do not fully converge: their bars are close, but they are not on top of each other.",
     gapComment:
-      "The level gap remains meaningful, which is why the smallest GDC in the figure should not be mistaken for the absence of polarization.",
+      "The <em>level</em> gap remains meaningful here too. The lowest GDC in the comparison should not be read as the absence of polarization, only as a less explosive generational change.",
     gdcComment:
-      "This is the lowest GDC value in the regime comparison. The split exists, but it grows less explosively across generations than elsewhere."
+      "This is the smallest GDC in the four regimes: the split exists, but it grows less explosively from Millennials to Gen Z than elsewhere in Europe."
   }
 };
 
@@ -138,13 +138,25 @@ function updateSummaryCards() {
     node.style.color = meta.color;
   });
 
-  document.getElementById("evolution-figure").src = meta.evolutionFile;
-  document.getElementById("evolution-figure").alt =
-    `Original thesis chart for ${regime}: postmaterialist-traditional values by generation and gender.`;
-  document.getElementById("evolution-comment").textContent = meta.evolutionComment;
-  document.getElementById("grouped-comment").textContent = meta.groupedComment;
-  document.getElementById("gap-comment").textContent = meta.gapComment;
-  document.getElementById("gdc-comment").textContent = meta.gdcComment;
+  const evolutionContainer = document.getElementById("evolution-chart");
+  if (evolutionContainer && evolutionContainer.dataset.src !== meta.evolutionFile) {
+    if (window.InteractiveCharts && typeof window.InteractiveCharts.remount === "function") {
+      window.InteractiveCharts.remount(evolutionContainer, meta.evolutionFile);
+    } else {
+      evolutionContainer.dataset.src = meta.evolutionFile;
+    }
+  }
+  const evolutionTarget = evolutionContainer && evolutionContainer.querySelector(".plot-target");
+  if (evolutionTarget) {
+    evolutionTarget.setAttribute(
+      "aria-label",
+      `Interactive evolution of the GAL-TAN mean by generation and gender, ${regime} regime`
+    );
+  }
+  document.getElementById("evolution-comment").innerHTML = meta.evolutionComment;
+  document.getElementById("grouped-comment").innerHTML = meta.groupedComment;
+  document.getElementById("gap-comment").innerHTML = meta.gapComment;
+  document.getElementById("gdc-comment").innerHTML = meta.gdcComment;
   document.getElementById("country-list").textContent = meta.countries;
 
   document.getElementById("regime-total-sample").textContent =
