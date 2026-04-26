@@ -192,7 +192,6 @@ function render() {
   updateSummaryCards();
 }
 
-// Load the same final CSV exports used to build the thesis figures.
 Promise.all([
   fetch("data/agg_means_galtan_by_regime_generation_gender.csv").then((response) => response.text()),
   fetch("data/genz_means_galtan_by_regime_gender.csv").then((response) => response.text()),
