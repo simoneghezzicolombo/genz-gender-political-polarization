@@ -214,10 +214,30 @@
         <h2>Who ends up at the political extremes</h2>
       </div>
       <p class="section-intro">
-        Averages can hide polarization: a generation can have a centrist mean while being internally split between two poles. Here respondents are re-classified as <em>strongly progressive</em> (CHES &le; 2.5) or <em>strongly traditional</em> (CHES &ge; 7.5) on the postmaterialist&ndash;traditional axis, and we track how the balance between these poles moves from one generation to the next, separately for women and men.
+        Averages can hide polarization: a generation can have a centrist mean while being internally split between two poles. Here respondents are re-classified as <em>strongly progressive</em> (CHES &le; 2.5) or <em>strongly traditional</em> (CHES &ge; 7.5) on the postmaterialist&ndash;traditional axis. We first look at how many people sit at either pole in each generation, then split the picture by gender, and finally track how the balance moves across generational transitions.
       </p>
 
       <div class="chart-stack">
+        <figure class="figure-card chart-card">
+          <h3>How many young Europeans actually sit at the poles</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase2/fig18_combined_extremes_by_generation.json">
+            <div class="plot-target" role="img" aria-label="Combined share of strongly progressive or strongly traditional respondents by generation, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede"><span class="chart-label">What it means</span>The share of respondents whose preferred party sits at one of the two cultural extremes climbs almost linearly with each new generation: from about 31% among the Silent Generation to roughly 50% in Gen Z. Half of Gen Z is choosing parties that experts code as either strongly progressive or strongly traditional &mdash; the centre is no longer where most young Europeans land.</p>
+          <p class="chart-howto"><span class="chart-label">How to read it</span>One dot per generation. The y-value is the combined share of respondents whose linked party scores &le; 2.5 (strongly progressive) or &ge; 7.5 (strongly traditional) on the CHES postmaterialist&ndash;traditional scale. Pooled EU27, n &asymp; 36,300. Genders are aggregated here.</p>
+        </figure>
+
+        <figure class="figure-card chart-card">
+          <h3>Strongly progressive vs strongly traditional, by gender</h3>
+          <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase2/fig19_extremes_by_gender_generation.json">
+            <div class="plot-target" role="img" aria-label="Share of strongly progressive vs strongly traditional respondents by gender and generation, EU 2024"></div>
+            <div class="plot-status">Preparing interactive chart&hellip;</div>
+          </div>
+          <p class="chart-lede"><span class="chart-label">What it means</span>Splitting the same data by gender shows where the symmetry breaks. Up to the Millennials, women and men move in lockstep on both poles. In Gen Z the lines cross: the share of women on the strongly progressive pole jumps to about 25% while their traditional share stays flat; men do the opposite &mdash; their progressive share stalls at 22% and their traditional share rises to 28%. That asymmetry is what the rest of the section unpacks.</p>
+          <p class="chart-howto"><span class="chart-label">How to read it</span>Four lines per generation. Light purple = strongly progressive (CHES &le; 2.5), dark purple = strongly traditional (CHES &ge; 7.5). Solid = women, dashed = men. Each y-value is the share within that generation &times; gender cell. Pooled EU27.</p>
+        </figure>
+
         <figure class="figure-card chart-card">
           <h3>How the balance of extremes moves across generations</h3>
           <div class="figure-frame plot-frame" data-interactive data-src="data/interactive/phase2/fig_f1_transitions_by_gender.json">
@@ -359,21 +379,79 @@
       </p>
 
       <figure class="figure-card chart-card" style="margin-top: 6px;">
-        <h3>What changes the female&ndash;male gap inside Gen Z</h3>
-        <div
-          class="figure-frame plot-frame"
-          data-interactive
-          data-src="data/interactive/phase4/fig_p4_predictors_forest.json"
-        >
-          <div class="plot-target" role="img" aria-label="Forest plot of standardized interaction coefficients (female by predictor) for the Gen Z GAL-TAN gap, with 95% confidence intervals"></div>
-          <div class="plot-status">Preparing interactive chart&hellip;</div>
+        <h3>Gen Z gender gap &mdash; standardized interaction effects</h3>
+        <p class="table-subtitle">Coefficients from y = CHES ~ female + predictors(z) + female &times; predictors(z).</p>
+        <div class="coef-table-wrap">
+          <table class="coef-table">
+            <thead>
+              <tr>
+                <th scope="col">Predictor</th>
+                <th scope="col" class="num">Coeff</th>
+                <th scope="col" class="num">CI 2.5%</th>
+                <th scope="col" class="num">CI 97.5%</th>
+                <th scope="col" class="num">Std. Err.</th>
+                <th scope="col" class="num">p-value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-baseline sig">
+                <th scope="row">Female (baseline gap)</th>
+                <td class="num">&minus;0.5277</td>
+                <td class="num">&minus;0.7107</td>
+                <td class="num">&minus;0.3447</td>
+                <td class="num">0.0933</td>
+                <td class="num p-val">&lt;0.001</td>
+              </tr>
+              <tr class="sig">
+                <th scope="row">Economic difficulty <span class="z-tag">(z)</span></th>
+                <td class="num">&minus;0.2232</td>
+                <td class="num">&minus;0.4101</td>
+                <td class="num">&minus;0.0364</td>
+                <td class="num">0.0953</td>
+                <td class="num p-val">0.019</td>
+              </tr>
+              <tr>
+                <th scope="row">Education <span class="z-tag">(z)</span></th>
+                <td class="num">&minus;0.1054</td>
+                <td class="num">&minus;0.2944</td>
+                <td class="num">0.0836</td>
+                <td class="num">0.0964</td>
+                <td class="num p-val">0.274</td>
+              </tr>
+              <tr>
+                <th scope="row">Place of residence <span class="z-tag">(z)</span></th>
+                <td class="num">&minus;0.0725</td>
+                <td class="num">&minus;0.2551</td>
+                <td class="num">0.1101</td>
+                <td class="num">0.0931</td>
+                <td class="num p-val">0.436</td>
+              </tr>
+              <tr class="sig">
+                <th scope="row">Religious attendance <span class="z-tag">(z)</span></th>
+                <td class="num">+0.2419</td>
+                <td class="num">0.0560</td>
+                <td class="num">0.4278</td>
+                <td class="num">0.0948</td>
+                <td class="num p-val">0.011</td>
+              </tr>
+              <tr class="sig">
+                <th scope="row">Parental origin <span class="z-tag">(z)</span></th>
+                <td class="num">+0.2642</td>
+                <td class="num">0.0805</td>
+                <td class="num">0.4479</td>
+                <td class="num">0.0937</td>
+                <td class="num p-val">0.005</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="coef-legend"><span class="sig-dot"></span>Highlighted rows are statistically significant (p &lt; 0.05).</p>
         </div>
         <p class="chart-lede"><span class="chart-label">What it means</span>
-          The starting point is a <strong>baseline female gap of &minus;0.53 GAL&ndash;TAN points</strong> (p &lt; 0.001): all else equal, young women in Gen Z are clearly more postmaterialist than young men. The interaction coefficients say how that gap <em>changes</em> with each predictor.
-          Three factors move the needle in a statistically significant way. <strong>Economic difficulty widens the gap</strong> (coef. &minus;0.22, p = 0.019): when material hardship is higher, the female&ndash;male distance grows. <strong>Religious attendance narrows it</strong> (+0.24, p = 0.011) and <strong>parental origin narrows it the most</strong> (+0.26, p = 0.005): more religiosity or a different family origin pulls young women back closer to young men on the cultural axis. <strong>Education and place of residence are not significant</strong> (p = 0.274 and p = 0.436): the urban/rural divide and education levels alone do not reshape the Gen Z gender gap once the other factors are accounted for. The picture matches the thesis claim that the modern divide is driven less by where people live or how long they stayed in school, and more by the cultural and economic worlds Gen Z women and men actually inhabit.
+          The first row sets the scene: holding everything else constant, young women in Gen Z sit <strong>0.53 GAL&ndash;TAN points</strong> to the postmaterialist side of young men (p &lt; 0.001). The other rows tell you how that baseline gap <em>moves</em> when one specific predictor goes up by one standard deviation.
+          Three factors move it in a statistically significant way. <strong>Economic difficulty widens the gap</strong> (&minus;0.22, p = 0.019): when material hardship is higher, women drift further from men. <strong>Religious attendance narrows it</strong> (+0.24, p = 0.011) and <strong>parental origin narrows it the most</strong> (+0.26, p = 0.005): more religiosity or a foreign-born parent pulls young women back closer to young men on the cultural axis. <strong>Education and place of residence are not significant</strong> (p = 0.274 and p = 0.436). The takeaway matches the thesis: the modern divide is driven less by where people live or how long they studied, and more by the cultural and economic worlds Gen Z women and men actually inhabit.
         </p>
         <p class="chart-howto"><span class="chart-label">How to read it</span>
-          Each row is one predictor. The dot is its <em>interaction coefficient</em> with female (in GAL&ndash;TAN units per 1 SD of the standardized predictor); the horizontal bar is the 95% confidence interval. The <strong>vertical zero line</strong> is the reference: a confidence interval that does not cross zero is statistically significant (teal dots, dark ●). A <strong>negative coefficient (left of zero)</strong> means the predictor <em>widens</em> the female&ndash;male gap (women shift further from men), a <strong>positive coefficient (right of zero)</strong> means it <em>narrows</em> the gap (women shift toward men). Hover any dot for the exact coefficient, 95% CI, standard error and p-value. Sources: EES 2024 + ESS 2023&ndash;2024 + CHES 2024, standardized regression on Gen Z respondents.
+          Each row is one term in the regression. <em>Coeff</em> is the standardized estimate (in GAL&ndash;TAN units per one standard deviation of the predictor). <em>CI 2.5%</em> and <em>CI 97.5%</em> are the lower and upper bounds of the 95% confidence interval. <em>Std. Err.</em> is the standard error of the coefficient. <em>p-value</em> reports the probability of seeing a coefficient that large under the null. A confidence interval that does not cross zero is statistically significant. Negative coefficients <em>widen</em> the female&ndash;male gap; positive coefficients <em>narrow</em> it. Sources: EES 2024 + ESS 2023&ndash;2024 + CHES 2024, standardized regression on Gen Z respondents.
         </p>
       </figure>
     </section>

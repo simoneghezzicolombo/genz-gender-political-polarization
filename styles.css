@@ -423,6 +423,111 @@ main section {
   line-height: 1.65;
 }
 
+.table-subtitle {
+  margin: -2px 2px 12px;
+  color: #5b6a72;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.coef-table-wrap {
+  margin: 6px 0 14px;
+  overflow-x: auto;
+  border: 1px solid #d6e2e0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.coef-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+  color: #1f3a40;
+}
+
+.coef-table thead th {
+  padding: 12px 14px;
+  background: #f3faf8;
+  border-bottom: 2px solid #c6d7d4;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3a5a61;
+  white-space: nowrap;
+}
+
+.coef-table th[scope="row"] {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #102a32;
+  white-space: nowrap;
+}
+
+.coef-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #ecf2f0;
+}
+
+.coef-table tbody tr:last-child th,
+.coef-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.coef-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.coef-table thead th.num {
+  text-align: right;
+}
+
+.coef-table .z-tag {
+  color: #6b7c83;
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+.coef-table tr.sig {
+  background: rgba(36, 117, 99, 0.06);
+}
+
+.coef-table tr.sig th[scope="row"],
+.coef-table tr.sig td {
+  color: #102a32;
+}
+
+.coef-table tr.sig td.p-val,
+.coef-table tr.row-baseline td.p-val {
+  color: var(--teal-strong);
+  font-weight: 700;
+}
+
+.coef-table tr.row-baseline th[scope="row"] {
+  color: var(--teal-strong);
+  font-weight: 700;
+}
+
+.coef-legend {
+  margin: 10px 14px 14px;
+  color: #5b6a72;
+  font-size: 0.85rem;
+}
+
+.coef-legend .sig-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: rgba(36, 117, 99, 0.32);
+  vertical-align: -1px;
+}
+
 .chart-stack {
   display: grid;
   gap: 20px;
