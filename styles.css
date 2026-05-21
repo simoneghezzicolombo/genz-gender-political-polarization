@@ -246,6 +246,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.policy-box {
+  margin-top: 18px;
+  border-left: 4px solid var(--teal);
+}
+
 .lead-grid,
 .two-col,
 .figure-grid {
