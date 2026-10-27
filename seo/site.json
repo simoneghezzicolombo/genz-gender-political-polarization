@@ -1,0 +1,17 @@
+{
+  "name": "Gen Z Gender Political Polarization",
+  "url": "https://simoneghezzicolombo.github.io/genz-gender-political-polarization/",
+  "description": "Studio di Simone Ghezzi Colombo sulla polarizzazione politica di genere tra i giovani nei 27 Paesi dell'Unione europea, con dati ESS, EES e CHES.",
+  "published": "2026-10-27", "languages": ["it", "en"],
+  "image": "social-preview.png",
+  "translate": {"kind": "pairs", "source": "app.js", "constant": "GENZ_TRANSLATIONS", "order": ["en", "it"]},
+  "pages": [{"path": "index.html", "url": "", "localized": true,
+    "title": "Polarizzazione politica di genere nella Gen Z europea | Simone Ghezzi Colombo",
+    "title_en": "Gen Z gender political polarization in the EU | Simone Ghezzi Colombo",
+    "description": "Ricerca sui giovani nei 27 Paesi UE: divari di genere su sinistra-destra, valori e diritti delle donne. Grafici interattivi, fonti ESS/EES/CHES, metodo e tesi.",
+    "description_en": "Research across all 27 EU countries: gender gaps in left-right positioning, cultural values and women's rights. Interactive figures, ESS/EES/CHES sources, methods and thesis.",
+    "dataset": {"temporalCoverage": "2023/2024", "spatialCoverage": {"@type": "Place", "name": "European Union, 27 member states"}, "variableMeasured": ["Supported-party left-right position", "Supported-party cultural position", "Supported-party position on women's rights"], "isBasedOn": ["https://www.europeansocialsurvey.org/", "https://europeanelectionstudies.net/", "https://www.chesdata.eu/"]}
+  }],
+  "extra_urls": ["thesis.pdf"],
+  "resources": [{"name": "Full thesis", "url": "thesis.pdf", "description": "Master's thesis, 2025. The figures describe supported-party positions and associations, not causal effects."}, {"name": "Source code and data", "url": "https://github.com/simoneghezzicolombo/genz-gender-political-polarization", "description": "Reproducible figures and analysis outputs."}]
+}

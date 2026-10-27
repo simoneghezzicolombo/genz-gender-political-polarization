@@ -1,0 +1,13 @@
+# Gen Z Gender Political Polarization
+
+> Studio di Simone Ghezzi Colombo sulla polarizzazione politica di genere tra i giovani nei 27 Paesi dell'Unione europea, con dati ESS, EES e CHES.
+
+## Public pages
+
+- [Polarizzazione politica di genere nella Gen Z europea | Simone Ghezzi Colombo](https://simoneghezzicolombo.github.io/genz-gender-political-polarization/): Ricerca sui giovani nei 27 Paesi UE: divari di genere su sinistra-destra, valori e diritti delle donne. Grafici interattivi, fonti ESS/EES/CHES, metodo e tesi.
+- [Full thesis](https://simoneghezzicolombo.github.io/genz-gender-political-polarization/thesis.pdf): Master's thesis, 2025. The figures describe supported-party positions and associations, not causal effects.
+- [Source code and data](https://github.com/simoneghezzicolombo/genz-gender-political-polarization): Reproducible figures and analysis outputs.
+
+## Attribution and interpretation
+
+Author: Simone Ghezzi Colombo. Cite the relevant page and the original data sources. These are independent research projects, not official institutional services.
